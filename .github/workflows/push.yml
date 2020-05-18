@@ -24,8 +24,8 @@ jobs:
       - name: "Automated Version Bump"
         uses: "shawncx/gh-action-bump-version@master"
         with:
-          tag-prefix: ''
           commit-time-check: 1
+          tag-prefix: ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "cat package.json"
